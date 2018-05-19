@@ -8,8 +8,14 @@ namespace PrograZ
 {
     class Jugador
     {
-        public int hp { get; set; }
-        public int dinero { get; set; }
-        public int puntaje { get; set; }
+        public int hp; 
+        public int dinero; 
+        public int puntaje;
+
+        public Jugador () { //Por mejorar
+            dinero = 0;
+            hp = 0;
+            puntaje = 0;
+        }
     }
 }
