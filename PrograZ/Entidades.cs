@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PrograZ
 {
-    class Entidades
+    public class Entidades
     {
         public string nombre { get; set; }
     }

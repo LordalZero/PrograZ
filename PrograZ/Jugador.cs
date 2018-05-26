@@ -6,16 +6,18 @@ using System.Threading.Tasks;
 
 namespace PrograZ
 {
-    class Jugador
+    class Jugador : Entidades
     {
-        public int hp; 
-        public int dinero; 
+        int hp;
+        public int dinero;
         public int puntaje;
+        public int Hp { get { return hp; } set { hp = value; } }
 
-        public Jugador () { //Por mejorar 11
-            dinero = 0;
-            hp = 0;
-            puntaje = 0;
+        public Jugador(int _hp, int _dinero, int _puntaje)
+        {
+            dinero = _dinero;
+            hp = _hp;
+            puntaje = _puntaje;
         }
     }
 }

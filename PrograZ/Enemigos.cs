@@ -1,8 +1,8 @@
 ﻿using System;
-
-/// <summary>
-/// Summary description for Class1
-/// </summary>
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 namespace PrograZ
 {
     public class Enemigos : Entidades
@@ -52,4 +52,4 @@ namespace PrograZ
 
 }
 
-   
+

@@ -1,7 +1,7 @@
 ﻿using System;
 
 
-namespace Practica
+namespace PrograZ
 {
     public class Danio : Torres
     {
@@ -10,7 +10,7 @@ namespace Practica
 
 
 
-        public Danio(int vel, int cos, int niv, int vid, int dam) : base(vel, cos, niv, vid, dam)
+        public Danio(int vel, int cos, int niv, int vid, int dam) : base (vel, cos, niv, vid)
         {
 
             damage = dam;

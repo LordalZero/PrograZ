@@ -1,24 +1,28 @@
 ﻿using System;
 
-public class Soporte : Torres
+namespace PrograZ
 {
 
-    public float ralentizacion;
-    public float area;
-
-
-
-    public Soporte(int vel, int cos, int niv, int vid, float ral, float ar) : base(vel, cos, niv, vid, ral, ar)
+    public class Soporte : Torres
     {
 
-        ralentizacion = ral;
-        area = ar;
+        public float ralentizacion;
+        public float area;
+
+
+
+        public Soporte(int vel, int cos, int niv, int vid, float ral, float ar) : base(vel, cos, niv, vid)
+        {
+
+            ralentizacion = ral;
+            area = ar;
+
+        }
+
+        public void DanioArea()
+        {
+
+        }
 
     }
-
-    public void DanioArea()
-    {
-
-    }
-
 }

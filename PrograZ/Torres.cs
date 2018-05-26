@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Practica
+namespace PrograZ
 {
     public class Torres : Entidades
     {
