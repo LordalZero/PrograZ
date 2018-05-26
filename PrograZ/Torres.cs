@@ -1,28 +1,32 @@
 ﻿using System;
 
-public class PrograZ
+namespace Practica
 {
-    class Torres
-    {
-        public int velocidad { get; set; }
-        public int costo { get; set; }
-        public int nivel { get; set; }
-        public int vida { get; set; }
-
-    }
-
-
-
-    public void Mejorar( int nivel, int costo)
+    public class Torres : Entidades
     {
 
+        public int velocidad;
+        public int costo;
+        public int nivel;
+        public int vida;
+
+        public Torres(int vel, int cos, int niv, int vid)
+        {
+            velocidad = vel;
+            costo = cos;
+            nivel = niv;
+            vida = vid;
+
+        }
+
+        public void Mejorar(int nivel, int costo)
+        {
+
+        }
+
+        public void Destruir()
+        {
+
+        }
     }
-
-    public void Destruir()
-    {
-
-    }
-
-
-
 }
