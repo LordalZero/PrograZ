@@ -1,6 +1,0 @@
-C:\Users\Henson\Desktop\mejoras_clase_enemigos\PrograZ\PrograZ\bin\Debug\PrograZ.dll
-C:\Users\Henson\Desktop\mejoras_clase_enemigos\PrograZ\PrograZ\bin\Debug\PrograZ.pdb
-C:\Users\Henson\Desktop\mejoras_clase_enemigos\PrograZ\PrograZ\obj\Debug\PrograZ.csprojResolveAssemblyReference.cache
-C:\Users\Henson\Desktop\mejoras_clase_enemigos\PrograZ\PrograZ\obj\Debug\PrograZ.csproj.CoreCompileInputs.cache
-C:\Users\Henson\Desktop\mejoras_clase_enemigos\PrograZ\PrograZ\obj\Debug\PrograZ.dll
-C:\Users\Henson\Desktop\mejoras_clase_enemigos\PrograZ\PrograZ\obj\Debug\PrograZ.pdb

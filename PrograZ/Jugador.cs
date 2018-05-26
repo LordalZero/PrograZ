@@ -12,7 +12,7 @@ namespace PrograZ
         public int dinero; 
         public int puntaje;
 
-        public Jugador () { //Por mejorar
+        public Jugador () { //Por mejorar 11
             dinero = 0;
             hp = 0;
             puntaje = 0;
