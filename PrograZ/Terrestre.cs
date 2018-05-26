@@ -1,14 +1,13 @@
 ﻿using System;
 
-public class Terrestre : Enemigos
+namespace PrograZ
 {
-    public Terrestre(int atk, int vid, int val, int rap)
+    public class Terrestre : Enemigoss
     {
 
-    }
+        public void Mover()
+        {
 
-    public Patron()
-    {
-
+        }
     }
 }
