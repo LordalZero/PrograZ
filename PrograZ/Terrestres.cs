@@ -12,9 +12,10 @@ namespace PrograZ
         {
           
         }
-        public void Mover()
+        public float Mover()
         {
-
+            float rap = rapidez;
+            return rap;
         }
     }
 }
