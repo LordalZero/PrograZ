@@ -6,8 +6,10 @@ namespace PrograZ
     public class Soporte : Torres
     {
 
-        public float ralentizacion;
-        public float area;
+        float ralentizacion;
+        float area;
+        public float Ralentizacion { get { return ralentizacion; } set { ralentizacion = value; } }
+        public float Area { get { return area; } set { area = value; } }
 
 
 
@@ -19,9 +21,16 @@ namespace PrograZ
 
         }
 
-        public void DanioArea()
+        public float Danio()
         {
+            float ral = ralentizacion;
+            return ral;
+        }
 
+        public float TamanoArea()
+        {
+            float ar = area;
+            return ar;
         }
 
     }
