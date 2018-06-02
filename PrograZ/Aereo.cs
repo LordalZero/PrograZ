@@ -9,10 +9,14 @@ namespace PrograZ
 
         }
 
-        public void Volar()
+        public float Volar()
         {
-
+            float rap = rapidez;
+            return rap;  
         }
+        
+            
+        
     }
 
 }

@@ -44,9 +44,10 @@ namespace PrograZ
             set { valor = value; }
         }
 
-        public void Golpear()
+        public float Golpear()
         {
-            ataque = 0;
+            float atk = ataque;
+            return atk;
         }
     }
 
