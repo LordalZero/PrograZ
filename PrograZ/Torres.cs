@@ -53,9 +53,10 @@ namespace PrograZ
 
         }
 
-        public void Destruir()
+        public string Destruir()
         {
-
+            string consola = "DESTRUIR TORRE";
+            return consola;
         }
     }
 }
