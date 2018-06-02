@@ -17,8 +17,10 @@ namespace PrograZ
 
         }
 
-        public void Atacar()
+        public int Atacar()
         {
+
+            return damage;
 
         }
 
