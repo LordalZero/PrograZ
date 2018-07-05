@@ -13,7 +13,7 @@ public class TorreArea {
 
 	public TorreArea(int vel, int cos, int niv, int are, int dan){
 
-		velocidad = velocidad;
+		velocidad = vel;
 		costo = cos;
 		nivel = niv;
 		area = are;
