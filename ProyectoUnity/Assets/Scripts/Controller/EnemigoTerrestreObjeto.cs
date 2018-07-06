@@ -32,4 +32,10 @@ public class EnemigoTerrestreObjeto : MonoBehaviour {
     {
        // Reservado para View
     }
+
+    void AplicarDanio()
+    {
+        // Aplicar Danio a jugador (Falta clase de jugador de modelo)
+        Destroy(gameObject);
+    }
 }

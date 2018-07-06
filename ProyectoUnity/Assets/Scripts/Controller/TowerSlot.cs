@@ -10,5 +10,19 @@ public class TowerSlot : MonoBehaviour {
     {
         towerSlotState = 0;
     }
+
+    void Start()
+    {
+        InvokeRepeating("Attack", 0, 5);
+    }
+
+    void Attack ()
+    {
+        if (towerSlotState == 1)
+        {
+            Debug.Log("Basic Tower Attacks");
+            // Reducir dmg a enemigo en rango (Falta boundaries de parte de view)
+        }
+    }
 	
 }

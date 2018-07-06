@@ -76,6 +76,9 @@ public class TowerController : MonoBehaviour {
                 //GameObject nuevaTorreBasica = Instantiate(torreBasicaObjeto, torresObjeto[towerIndex].transform.position, torresObjeto[towerIndex].transform.rotation) as GameObject;
                 //nuevaTorreBasica.transform.parent = canvasGameObj.transform;
                 torresObjeto[i].GetComponent<Image>().color = Color.blue;
+                //GameObject refObj = torresObjeto[i];
+
+                torresObjeto[i].GetComponent<TowerSlot>().towerSlotState = 1;
             } else
             {
                 torresObjeto[i].GetComponent<Image>().color = Color.white;
