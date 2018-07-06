@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TowerController : MonoBehaviour {
 
@@ -35,7 +36,11 @@ public class TowerController : MonoBehaviour {
     public void AssignBasicTower2Selection ()
     {
         //listaDeTorresBasicas.Insert(towerIndex, new TorreBasica(10, 10, 10, 10));
-        torres[towerIndex] = new TorreBasica(5,3,1,4);
+        if (torres[towerIndex] == null)
+        {
+            torres[towerIndex] = new TorreBasica(5, 3, 1, 4);
+            Debug.Log("Setting Tower to Slot: " + towerIndex);
+        }
     }
 
     public void AssignIndexTower (int towerSelection)
@@ -45,11 +50,20 @@ public class TowerController : MonoBehaviour {
 
     public void ShowTowerSelectedValues ()
     {
-        Debug.Log("Torre Numero "+ towerIndex +" Velocidad: " + torres[towerIndex].velocidad + " Costo: " + torres[towerIndex].costo + " Nivel: " + torres[towerIndex].nivel + " Ataque: " + torres[towerIndex].danio);
+
+        if (torres[towerIndex] == null)
+        {
+            Debug.Log("No hay torres en esta casilla");
+        } else
+        {
+            Debug.Log("Torre Numero " + towerIndex + " Velocidad: " + torres[towerIndex].velocidad + " Costo: " + torres[towerIndex].costo + " Nivel: " + torres[towerIndex].nivel + " Ataque: " + torres[towerIndex].danio);
+
+        }
     }
 
     public void UnassignTower ()
     {
+        torres[towerIndex] = null;
 
     }
 
@@ -59,9 +73,12 @@ public class TowerController : MonoBehaviour {
         {
             if (torres[i] != null)
             {
-                GameObject nuevaTorreBasica = Instantiate(torreBasicaObjeto, torresObjeto[towerIndex].transform.position, torresObjeto[towerIndex].transform.rotation) as GameObject;
-                nuevaTorreBasica.transform.parent = canvasGameObj.transform;
-                Debug.Log("Setting Tower to Slot: " + towerIndex);
+                //GameObject nuevaTorreBasica = Instantiate(torreBasicaObjeto, torresObjeto[towerIndex].transform.position, torresObjeto[towerIndex].transform.rotation) as GameObject;
+                //nuevaTorreBasica.transform.parent = canvasGameObj.transform;
+                torresObjeto[i].GetComponent<Image>().color = Color.blue;
+            } else
+            {
+                torresObjeto[i].GetComponent<Image>().color = Color.white;
             }
         }
     }
