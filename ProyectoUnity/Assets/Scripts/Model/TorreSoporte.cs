@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using PrograZ;
 
-public class TorreSoporte {
+public class TorreSoporte : Entidades {
 
-	public int velocidad;
-	public int costo;
-	public int nivel;
-	public int ralentizacion;
-	public int area;
-	public int danio;
+	public int velocidad = 3;
+	public int costo = 9;
+	public int nivel = 1;
+	public int ralentizacion = 1;
+	public int area = 3;
+	public int danio = 1;
 
 	public TorreSoporte(int vel, int cos, int niv, int ral, int are, int dan){
 

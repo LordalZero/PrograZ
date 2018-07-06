@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using PrograZ;
 
-public class TorreAntiaereo {
+public class TorreAntiaereo : Entidades {
 
-	public int velocidad;
-	public int costo;
-	public int nivel;
-	public int danio;
+	public int velocidad = 4;
+	public int costo = 10;
+	public int nivel = 1;
+	public int danio = 4;
 
 	public TorreAntiaereo(int vel, int cos, int niv, int dan){
 
