@@ -5,10 +5,10 @@ using PrograZ;
 
 public class TorreAntiaereo : Entidades {
 
-	public int velocidad = 4;
-	public int costo = 10;
-	public int nivel = 1;
-	public int danio = 4;
+	public int velocidad;
+	public int costo;
+	public int nivel;
+	public int danio;
 
 	public TorreAntiaereo(int vel, int cos, int niv, int dan){
 
@@ -17,6 +17,9 @@ public class TorreAntiaereo : Entidades {
 		nivel = niv;
 		danio = dan;
 	}
+
+	public TorreAntiaereo myTorreAntiareo = new TorreAntiaereo (5, 10, 1, 8);
+
 
 	public int Velocidad
 	{

@@ -5,11 +5,11 @@ using PrograZ;
 
 public class TorreArea : Entidades {
 
-	public int velocidad = 6;
-	public int costo = 5;
-	public int nivel = 1;
-	public int area = 3;
-	public int danio = 3;
+	public int velocidad;
+	public int costo;
+	public int nivel;
+	public int area;
+	public int danio;
 
 	public TorreArea(int vel, int cos, int niv, int are, int dan){
 

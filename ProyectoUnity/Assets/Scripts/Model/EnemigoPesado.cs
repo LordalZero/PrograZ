@@ -5,10 +5,10 @@ using PrograZ;
 
 public class EnemigoPesado {
 
-	public int ataque = 10;
-	public int vida = 20;
-	public int valor = 15;
-	public int rapidez = 1;
+	public int ataque;
+	public int vida;
+	public int valor;
+	public int rapidez;
 
 	public EnemigoPesado(int atk, int vid, int val, int rap){
 		ataque = atk;

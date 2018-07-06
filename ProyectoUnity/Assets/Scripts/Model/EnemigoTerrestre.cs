@@ -5,10 +5,10 @@ using PrograZ;
 
 public class EnemigoTerrestre {
 
-	public int ataque = 5;
-	public int vida = 10;
-	public int valor = 6;
-	public int rapidez = 6;
+	public int ataque;
+	public int vida;
+	public int valor;
+	public int rapidez;
 
 	public EnemigoTerrestre(int atk, int vid, int val, int rap){
 
@@ -17,6 +17,9 @@ public class EnemigoTerrestre {
 		valor = val;
 		rapidez = rap;
 	}
+
+	public EnemigoTerrestre myEnemigoTerrestre = new EnemigoTerrestre (6, 8, 6, 5);
+
 
 	public int Ataque
 	{
