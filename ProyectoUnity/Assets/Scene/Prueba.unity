@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -412,6 +412,7 @@ GameObject:
   - component: {fileID: 999982435}
   - component: {fileID: 999982434}
   - component: {fileID: 999982433}
+  - component: {fileID: 999982438}
   m_Layer: 0
   m_Name: Torre
   m_TagString: Untagged
@@ -432,6 +433,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 193980464}
   Look: 1
+  bullet: {fileID: 1875768770110194, guid: 473e70586e6fa07479c68b29ba7a7586, type: 2}
+  cannon: {fileID: 1363349082}
+  firerate: 1
 --- !u!65 &999982434
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -500,6 +504,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &999982438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 999982432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9341a8d3b47cbc4fb4e396bbf83de24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 1
+  target: {fileID: 0}
 --- !u!1 &1363349081
 GameObject:
   m_ObjectHideFlags: 0
@@ -511,8 +528,6 @@ GameObject:
   - component: {fileID: 1363349085}
   - component: {fileID: 1363349084}
   - component: {fileID: 1363349083}
-  - component: {fileID: 1363349086}
-  - component: {fileID: 1363349087}
   m_Layer: 0
   m_Name: Cannon
   m_TagString: Untagged
@@ -589,33 +604,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1363349081}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1363349086
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1363349081}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca97b8f50de71ed44b8808d45b053f17, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  "Ca\xF1on": {fileID: 734952189}
-  Instatiate: {fileID: 0}
-  prefab: {fileID: 0}
---- !u!114 &1363349087
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1363349081}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67740b8491e15f64b8029cfd2b37d479, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bullet: {fileID: 1875768770110194, guid: 473e70586e6fa07479c68b29ba7a7586, type: 2}
-  cannon: {fileID: 734952190}
 --- !u!1 &2055968917
 GameObject:
   m_ObjectHideFlags: 0

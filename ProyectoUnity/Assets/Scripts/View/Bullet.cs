@@ -4,15 +4,19 @@ using UnityEngine;
 using PrograZ;
 
 public class Bullet : MonoBehaviour {
+
     public float force;
-	// Use this for initialization
-	void Start () {
-        Destroy(this.gameObject, 2);
-        GetComponent<Rigidbody>().AddForce(this.transform.up * force);
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    [HideInInspector] public Transform target;
+    private Vector3 lookDirection;
+
+
+    // Use this for initialization
+    void Start () {
+        Destroy(this.gameObject, 10);
+    }
+
+    void Update() {
+        lookDirection = (target.position - transform.position).normalized;
+        transform.Translate(lookDirection * force * Time.deltaTime, Space.World);
+    }
 }
