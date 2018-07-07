@@ -6,17 +6,20 @@ using PrograZ;
 public class Player : Entidades {
 
 	public int vida;
+    public int money;
+    public float time;
 
 
 
 
-	public Player(int hp){
+	public Player(float tim){
 		
-		vida = hp;
+		vida = 50;
+        money = 0;
+        time = tim;
 		
 	}
 
-	public Player myPlayer = new Player (50);
 
 	public int Vida
 	{
@@ -29,6 +32,33 @@ public class Player : Entidades {
 			vida = value;
 		}
 	}
+
+    public int Money
+    {
+        get
+        {
+            return money;
+        }
+        set
+        {
+            money = value;
+        }
+    }
+
+    public float Time
+    {
+        get
+        {
+            return time;
+        }
+        set
+        {
+            time = value;
+        }
+
+    }
+
+    
 
 	// Use this for initialization
 	void Start () {
