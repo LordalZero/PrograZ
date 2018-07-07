@@ -10,7 +10,7 @@ public class EnemigoAereoObjeto : MonoBehaviour {
 
     void Awake()
     {
-        esteEnemigo = new EnemigoAereo(5, 12, 5, 3);
+        esteEnemigo = new EnemigoAereo();
     }
 
     // Use this for initialization

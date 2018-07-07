@@ -28,7 +28,7 @@ public class TowerController : MonoBehaviour {
 
 	public void CrearTorrePrueba() { // Debuggin Purposes
 
-        TorreBasica torrecitaZero = new TorreBasica(79, 79, 79, 79);
+        TorreBasica torrecitaZero = new TorreBasica();
         Debug.Log(torrecitaZero.velocidad);
         Debug.Log(torrecitaZero.danio);
     }
@@ -38,7 +38,7 @@ public class TowerController : MonoBehaviour {
         //listaDeTorresBasicas.Insert(towerIndex, new TorreBasica(10, 10, 10, 10));
         if (torres[towerIndex] == null)
         {
-            torres[towerIndex] = new TorreBasica(5, 3, 1, 4);
+            torres[towerIndex] = new TorreBasica();
             Debug.Log("Setting Tower to Slot: " + towerIndex);
         }
     }
