@@ -11,14 +11,14 @@ public class EnemigoAereo {
 	public int rapidez;
 
 
-	public EnemigoAereo(int atk, int vid, int val, int rap){
-		ataque = atk;
-		vida = vid;
-		valor = val;
-		rapidez = rap;
+	public EnemigoAereo(){
+		ataque = 6;
+		vida = 9;
+		valor = 6;
+		rapidez = 6;
 	}
 
-	public EnemigoAereo myEnemigoAereo = new EnemigoAereo(10, 5, 7, 9);
+
 
 
 	public int Ataque

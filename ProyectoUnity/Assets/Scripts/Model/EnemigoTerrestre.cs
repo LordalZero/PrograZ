@@ -10,15 +10,15 @@ public class EnemigoTerrestre {
 	public int valor;
 	public int rapidez;
 
-	public EnemigoTerrestre(int atk, int vid, int val, int rap){
+	public EnemigoTerrestre(){
 
-		ataque = atk;
-		vida = vid;
-		valor = val;
-		rapidez = rap;
+		ataque = 6;
+		vida = 10;
+		valor = 8;
+		rapidez = 10;
 	}
 
-	public EnemigoTerrestre myEnemigoTerrestre = new EnemigoTerrestre (6, 8, 6, 5);
+	
 
 
 	public int Ataque

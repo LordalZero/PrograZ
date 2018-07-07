@@ -10,15 +10,15 @@ public class TorreAntiaereo : Entidades {
 	public int nivel;
 	public int danio;
 
-	public TorreAntiaereo(int vel, int cos, int niv, int dan){
+	public TorreAntiaereo(){
 
-		velocidad = vel;
-		costo = cos;
-		nivel = niv;
-		danio = dan;
+		velocidad = 5;
+		costo = 6;
+		nivel = 1;
+		danio = 6;
 	}
 
-	public TorreAntiaereo myTorreAntiareo = new TorreAntiaereo (5, 10, 1, 8);
+	
 
 
 	public int Velocidad

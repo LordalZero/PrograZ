@@ -10,15 +10,15 @@ public class TorreBasica : Entidades {
 	public int nivel;
 	public int danio;
 
-	public TorreBasica(int vel, int cos, int niv, int dan){
+	public TorreBasica(){
 
-		velocidad = vel;
-		costo = cos;
-		nivel = niv;
-		danio = dan;
+		velocidad = 5;
+		costo = 4;
+		nivel = 1;
+		danio = 5;
 	}
 
-	public TorreBasica myTorreBasica = new TorreBasica (6, 4, 1, 6);
+	
 
 
 	public int Velocidad
